@@ -72,73 +72,59 @@ else if (koalasAvrg === dolphinsAvrg) {
 else { console.log("Dolphins have a bigger average score!") };
 
 //requirement for a minimum score of 100
-let dolphinsScoreAbove1;
-let dolphinsScoreAbove2;
-let dolphinsScoreAbove3;
-let koalasScoreAbove1;
-let koalasScoreAbove2;
-let koalasScoreAbove3;
 
-if (dolphinsScore1 >= 100) {
-    dolphinsScoreAbove1 = dolphinsScore1
-}
-else { dolphinsScoreAbove1 = 0 };
-
-if (dolphinsScore2 >= 100) {
-    dolphinsScoreAbove2 = dolphinsScore2
-}
-else { dolphinsScoreAbove2 = 0 };
-
-if (dolphinsScore3 >= 100) {
-    dolphinsScoreAbove3 = dolphinsScore3
-}
-else { dolphinsScoreAbove3 = 0 };
-
-
-if (koalasScore1 >= 100) {
-    koalasScoreAbove1 = koalasScore1
-}
-else { koalasScoreAbove1 = 0 };
-
-if (koalasScore2 >= 100) {
-    koalasScoreAbove2 = koalasScore2
-}
-else { koalasScoreAbove2 = 0 };
-
-if (koalasScore3 >= 100) {
-    koalasScoreAbove3 = koalasScore3
-}
-else { koalasScoreAbove3 = 0 };
-
-
-
-//Compare scores with condition
-if (dolphinsScoreAbove1 > koalasScoreAbove1) {
+if (dolphinsScore1 > koalasScore1 && dolphinsScore1 >= 100) {
     console.log("Dolphins win the first game!")
 }
-else if (dolphinsScoreAbove1 === koalasScoreAbove1) {
+
+else if (koalasScore1 > dolphinsScore1 && koalasScore1 >= 100) {
+    console.log("Koalas win the first game!")
+}
+
+else if (koalasScore1 === dolphinsScore1 && koalasScore1 >= 100) {
     console.log("First game is a draw!")
 }
-else { console.log("Koalas win the first game!") }
+
+else {
+    console.log("No one wins the first game")
+};
 
 
 
-if (dolphinsScoreAbove2 > koalasScoreAbove2) {
+
+
+if (dolphinsScore2 > koalasScore2 && dolphinsScore2 >= 100) {
     console.log("Dolphins win the second game!")
 }
-else if (dolphinsScoreAbove2 === koalasScoreAbove2) {
+
+else if (koalasScore2 > dolphinsScore2 && koalasScore2 >= 100) {
+    console.log("Koalas win the second game!")
+}
+
+else if (koalasScore2 === dolphinsScore2 && koalasScore2 >= 100) {
     console.log("Second game is a draw!")
 }
-else { console.log("Koalas win the second game!") }
+
+else {
+    console.log("No one wins the second game")
+};
 
 
 
-if (dolphinsScoreAbove3 > koalasScoreAbove3) {
+
+
+if (dolphinsScore3 > koalasScore3 && dolphinsScore3 >= 100) {
     console.log("Dolphins win the third game!")
 }
-else if (dolphinsScoreAbove3 === koalasScoreAbove3) {
+
+else if (koalasScore3 > dolphinsScore3 && koalasScore3 >= 100) {
+    console.log("Koalas win the third game!")
+}
+
+else if (koalasScore3 === dolphinsScore3 && koalasScore3 >= 100) {
     console.log("Third game is a draw!")
 }
-else { console.log("Koalas win the third game!") }
 
-
+else {
+    console.log("No one wins the third game")
+};
